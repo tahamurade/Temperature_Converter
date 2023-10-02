@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- code by taha murade -->
+    <div class="subject">
+
+        <h1>Temperature Converter</h1>
+
+        <div id="container">
+
+            <div class="icon" id="subject">
+
+            </div>
+
+            <div class="inputs">
+
+                <div class="input">
+                    <Label class="lab">Celsius:</Label>
+                    <input type="number" value="0" class="inp" id="cel">
+                </div>
+                <div class="input">
+                    <Label class="lab">Fahrenheit:</Label>
+                    <input type="number" value="32" class="inp" id="fah">
+                </div>
+       
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let fah = document.getElementById("fah");
+
+        let cel = document.getElementById("cel");
+        let subject = document.getElementById("subject")
+        // cel icon changes code
+
+        cel.addEventListener("click", function () {
+            event.stopPropagation();
+            subject.style.backgroundImage = 'url("Assets/Celcius.svg")'
+        });
+
+        document.addEventListener("click", function () {
+            subject.style.backgroundImage = 'none'
+        });
+
+
+        fah.addEventListener("click", function () {
+            event.stopPropagation();
+            subject.style.backgroundImage = 'url("Assets/Fahrenheit.svg")'
+        });
+
+        document.addEventListener("click", function () {
+            subject.style.backgroundImage = 'none'
+        });
+
+
+
+        //cell code start
+
+        cel.addEventListener('input', function () {
+            let currentValue = this.value;
+            let newValue = (currentValue * 9 / 5) + 32;
+
+            if (!Number.isInteger(newValue)) {
+                newValue = newValue.toFixed(4);
+            }
+
+
+            fah.value = newValue;
+
+        });
+        //end
+
+        fah.addEventListener('input', function () {
+            let currentValue = this.value;
+            let newValue = (currentValue - 32) * 5 / 9;
+
+            if (!Number.isInteger(newValue)) {
+                newValue = newValue.toFixed(4);
+            }
+
+
+            cel.value = newValue;
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

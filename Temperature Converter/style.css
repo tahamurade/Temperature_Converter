@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+body {
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    align-items: center;
+
+}
+
+.subject {
+    width: 700px;
+    height: 500px;
+    background-color: #e3e3e3;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 150px;
+    overflow: hidden;
+    border: 0.1px solid rgb(60, 60, 60);
+    box-shadow: 5px 5px 10px #888888;
+    ;
+}
+
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arvo', serif;
+    text-align: center;
+    background: rgb(208, 206, 206);
+
+}
+
+#container {
+    text-align: center;
+
+
+
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.inputs {
+    padding: 70px;
+
+}
+
+.lab {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.input {
+    height: 100px;
+    text-decoration: none;
+}
+
+.inp {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 20px;
+
+}
+
+.lab {
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: 500;
+}
+
+.icon {
+
+    height: 42px;
+    width: 48px;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: end;
+    justify-content: right;
+    margin-left: 630px;
+    border: 1px solid rgb(207, 204, 204);
+}
+
+.formula {
+    display: flex;
+}
+
+h3,
+p1 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+}
+
+p1 {
+    margin-left: 10px;
+    padding: 1px;
+    margin-bottom: 40px;
+}
+
+p2 {
+    margin-right: 15px;
+  padding: 200px 0;
+}
+
+p1,
+p2 {
+    font-size: 20px;
+}
